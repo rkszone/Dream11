@@ -4,7 +4,9 @@ import com.web.dream11.exception.Dream11Exception;
 import com.web.dream11.models.ValidationResponse;
 import com.web.dream11.models.dtos.UserDTO;
 import com.web.dream11.models.dtos.UserDetailsDTO;
+import com.web.dream11.models.entities.ConfirmationToken;
 import com.web.dream11.models.entities.User;
+import com.web.dream11.repository.ConfirmationTokenRepository;
 import com.web.dream11.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -41,19 +43,6 @@ public class UserServiceImp implements UserService{
     }
 
     /**
-     * Gives success response
-     * @param message response message
-     * @param httpStatus response http status
-     * @return ResponseEntity response details
-     */
-    public ResponseEntity successResponse(String message, HttpStatus httpStatus) {
-        ValidationResponse response = new ValidationResponse();
-        response.setMessage(message);
-        return ResponseEntity
-                .status(httpStatus)
-                .body(response);
-    }
-    /**
      * Validate user
      * @param userDTO the user dto
      * @return validated user
@@ -65,6 +54,19 @@ public class UserServiceImp implements UserService{
             userDto.setEmail(user.getEmail());
             userDto.setId(user.getId());
             return userDto;
+        }
+        return  null;
+    }
+
+    /**
+     * Validate user by email
+     * @param email email of the user
+     * @return validated user
+     */
+    public User validateUserByEmail(String email) {
+        User user = userRepository.findByEmail(email);
+        if (user != null) {
+            return user;
         }
         return  null;
     }
@@ -88,6 +90,14 @@ public class UserServiceImp implements UserService{
         }else{
             throw new Dream11Exception("no user found", HttpStatus.BAD_REQUEST);
         }
+    }
+
+    /**
+     * save
+     * @param user user
+     */
+    public void save(User user) {
+        userRepository.save(user);
     }
 }
 

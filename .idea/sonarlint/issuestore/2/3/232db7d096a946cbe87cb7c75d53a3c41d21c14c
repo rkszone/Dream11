@@ -1,0 +1,11 @@
+
+]	java:S125w"<This block of commented-out lines of code should be removed.(…şğ×ûÿÿÿÿ8¨Ó³¡õ.
+b
+java:S4684v"@Replace this persistent entity with a simple POJO or DTO object.(’Í¢Ñùÿÿÿÿ8²÷³¡õ.
+j
+java:S1192k"HDefine a constant instead of duplicating this literal "message" 3 times.(ÿçªñøÿÿÿÿ8¨Ó³¡õ.
+[
+java:S1128"9Remove this unused import 'org.springframework.ui.Model'.(ê†ıÿÿÿÿ8ó¸à¤õ.
+l
+java:S4488u"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ë¦éºşÿÿÿÿ8²÷³¡õ.
+]	java:S125}"<This block of commented-out lines of code should be removed.(ù£ãÜıÿÿÿÿ8¨Ó³¡õ.

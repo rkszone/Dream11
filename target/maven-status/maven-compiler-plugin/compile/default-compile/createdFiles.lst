@@ -1,7 +1,10 @@
+com/web/dream11/config/CustomWebConfig.class
 com/web/dream11/exception/RestExceptionHandler.class
 com/web/dream11/web/TestController.class
 com/web/dream11/exception/ExceptionMessage.class
 com/web/dream11/DemoApplication.class
+com/web/dream11/repository/ConfirmationTokenRepository.class
+com/web/dream11/models/entities/ConfirmationToken.class
 com/web/dream11/exception/Dream11Exception.class
 com/web/dream11/models/dtos/UserDetailsDTO.class
 com/web/dream11/models/dtos/UserDTO.class
@@ -13,3 +16,4 @@ com/web/dream11/service/UserService.class
 com/web/dream11/repository/TestRepository.class
 com/web/dream11/models/ValidationResponse.class
 com/web/dream11/repository/UserRepository.class
+com/web/dream11/service/EmailSenderService.class

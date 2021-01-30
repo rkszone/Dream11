@@ -37,3 +37,14 @@ m
 =src/main/java/com/web/dream11/exception/ExceptionMessage.java,1/5/150d5477955b72f51a905d83d40eaf3278f2f111
 i
 9src/main/java/com/web/dream11/service/UserServiceImp.java,5/8/581e9e6516fbbe7cabdde195d98c95bcc49f6796
+y
+Isrc/main/java/com/web/dream11/repository/ConfirmationTokenRepository.java,c/b/cb7933644082236f7da65ae5a98658a9c24afdde
+t
+Dsrc/main/java/com/web/dream11/models/entities/ConfirmationToken.java,8/4/844299d53904e36f0e1da31de6d444d85d4bb4a2
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+i
+9src/main/java/com/web/dream11/config/CustomWebConfig.java,3/1/31b3b6520efa01afa4f8f17c5cce0e3ed6d5bf37
+m
+=src/main/java/com/web/dream11/service/EmailSenderService.java,8/d/8de9d419484b4bf1166d4643d4810a4edde5d78c
